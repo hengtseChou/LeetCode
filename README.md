@@ -1,6 +1,6 @@
 # LeetCode Notes
 
-The submission were made in Python 3.
+The submissions were made in Python 3.
 
 ## Challenge 1: Grind 75
 
