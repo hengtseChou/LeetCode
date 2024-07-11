@@ -8,6 +8,7 @@ class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
         # was using id to check for identical node but not necessary
         # set is mutable and tuple is not mutable
+        # The is operator checks whether two variables point to the exact same object in memory. 
         if head is None or head.next is None:
             return False
 
