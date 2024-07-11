@@ -31,3 +31,4 @@ class Solution:
         #     if (slow == fast):
         #         return True
         # return False
+        # O(1) (constant) memory
