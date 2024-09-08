@@ -6,6 +6,8 @@
 #         self.right = right
 class Solution:
 
+    # The diameter of a binary tree is the length of the longest path between any two nodes in a tree.
+    # This path may or may not pass through the root.
     def __init__(self):
         self.diameter = 0
 
