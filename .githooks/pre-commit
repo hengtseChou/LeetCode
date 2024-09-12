@@ -1,10 +1,12 @@
 #!/bin/bash
 files=$(git diff --cached --name-only --diff-filter=ACM -- '*.py')
 if [[ -n "$files" ]]; then
-  echo "Running black formatter on the following files:"
-  echo "$files"
+  echo ":: Running black formatter on the following files:"
+  for file in $files; do
+    echo "   - $file"
+  done
   black $files -l 100 -q
   git add $files
-  echo "Black formatting applied."
+  echo ":: Black formatting applied."
 fi
 exit 0
