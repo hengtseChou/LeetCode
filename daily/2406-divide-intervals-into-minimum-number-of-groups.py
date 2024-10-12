@@ -6,6 +6,8 @@ class Solution:
 
         # use a min-heap (priority queue) to track the earliest end time of the current groups
 
+        # First, we sort the intervals by their start time.
+        # This ensures that when processing each interval, we are always considering the earliest starting intervals first.
         intervals = sorted(intervals, key=lambda x: x[0])
         ending_times = []
 
