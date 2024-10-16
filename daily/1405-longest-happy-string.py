@@ -1,18 +1,19 @@
 import heapq
 
+
 class Solution:
     def longestDiverseString(self, a: int, b: int, c: int) -> str:
-        
+
         # ref: https://algo.monster/liteproblems/1405
 
         max_heap = []
         ans = []
         if a > 0:
-            heapq.heappush(max_heap, [-a, 'a'])
+            heapq.heappush(max_heap, [-a, "a"])
         if b > 0:
-            heapq.heappush(max_heap, [-b, 'b'])
+            heapq.heappush(max_heap, [-b, "b"])
         if c > 0:
-            heapq.heappush(max_heap, [-c, 'c'])
+            heapq.heappush(max_heap, [-c, "c"])
 
         while max_heap:
             curr_char = heapq.heappop(max_heap)
@@ -31,7 +32,5 @@ class Solution:
                 if -curr_char[0] > 1:
                     curr_char[0] += 1
                     heapq.heappush(max_heap, curr_char)
-        
-        return "".join(ans)
 
-        
+        return "".join(ans)
