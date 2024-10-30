@@ -57,7 +57,7 @@ class Solution:
 
     # standard solution
     # def flipEquiv(self, root1, root2):
-    #
+
     #     def checker(node1, node2):
     #         if not node1 and not node2:
     #             return True
@@ -65,5 +65,5 @@ class Solution:
     #             return False
     #         return ((checker(node1.left, node2.left) or checker(node1.left, node2.right)) and
     #                 (checker(node1.right, node2.right) or checker(node1.right, node2.left)))
-    #
+
     #     return checker(root1, root2)
