@@ -1,7 +1,6 @@
 class Solution:
     def makeFancyString(self, s: str) -> str:
-        
-	ans = []
+        ans = []
         last_char = ""
         count = 0
         for char in s:
@@ -14,6 +13,5 @@ class Solution:
                     continue
                 else:
                     ans.append(char)
-                    count +=1
+                    count += 1
         return "".join(ans)
-        
