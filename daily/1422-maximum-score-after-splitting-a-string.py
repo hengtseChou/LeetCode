@@ -1,7 +1,7 @@
 class Solution:
     def maxScore(self, s: str) -> int:
-        
-        total_ones = s.count('1')
+
+        total_ones = s.count("1")
 
         left_zeroes = 0
         right_ones = total_ones
