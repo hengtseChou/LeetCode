@@ -3,7 +3,7 @@ files=$(git diff --cached --name-only --diff-filter=ACM -- '*.py')
 if [[ -n "$files" ]]; then
   echo "[pre-commit] Running black formatter on the following files:"
   for file in $files; do
-    echo "     - $PWD/$file"
+    echo "   - $PWD/$file"
   done
   uvx black $files -l 100 -q
   git add $files
